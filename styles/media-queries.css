@@ -1,0 +1,79 @@
+/* mobile */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    .navigation-wrapper {
+        padding: 0;
+        width: 100vw;
+    }
+    .banner-image img {
+        height: 100%;
+        width: 80px;
+        padding: 12px;
+    }
+    .links-wrapper {
+        display: none;
+    }
+    .navigation-wrapper > .dropdown-menu {
+        display: block;
+        padding: 12px;
+    }
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    h1 span {
+        font-size: 4rem;
+        letter-spacing: 1px;
+    }
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-weight: 300;
+    }
+    .section2 .section-content, .section4 .section-content {
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 340px;
+    }
+    .spacer {
+        height: 6rem;
+    }
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem;
+    }
+    .projects .project img {
+        height: 110px;
+    }
+    .project-text {
+        padding-left: 10px;
+    }
+    .footer-content {
+        gap: 10px;
+    }
+    .footer-content .logo img {
+        height: 120px;
+    }
+    .footer-text {
+        line-height: 16px;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+
+}
+
+/* tablet */
+@media only screen and (max-width: 834px) and (orientation: portrait) {
+
+}
+
+/* tablet */
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+
+}
