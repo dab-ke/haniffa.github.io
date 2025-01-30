@@ -18,7 +18,7 @@
 <body>
     <div class="navigation-wrapper">
         <div class="banner-image">
-            <img src="images/HC.png" alt="Haniffa Crochets">
+            <img src="images/HC.png" alt="Haniffa Crochets" id="rotating-logo">
         </div>
         <div class="links-wrapper">
             <div class="nav-link">
@@ -35,7 +35,12 @@
             </div>
         </div>
         <div class="dropdown-menu">
-            <button class="icon"><i class="fas fa-bars"></i></button>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
             <div class="dropdown-content">
                 <div class="nav-link">
                     <a href="#home">Home</a>
@@ -65,7 +70,7 @@
             <h2>Hello, my name is</h2>
             <h1>Haniffa Krisette</h1>
             <h2>And I love to <span data-text="crochet">crochet</span></h2>
-            <p>Hald Visuals is a vibrant film production company in Nairobi, Kenya, that works with innovative brands and creatives to create impressionable visuals and unforgettable experiences through film and photography.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi explicabo incidunt quam, impedit rerum sint. Quas autem deleniti consequatur consectetur accusamus, ad vel asperiores nihil nobis inventore. Nesciunt, veniam nobis.</p>
         </div>
     </div>
 
@@ -152,5 +157,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let scrollPosition = window.scrollY;
+            let rotation = -10 + scrollPosition * 0.01;
+            document.getElementById("rotating-logo").style.transform = `rotate(${rotation}deg)`;
+        });
+    </script>
 </body>
 </html>
